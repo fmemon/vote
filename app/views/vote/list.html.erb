@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Question List</title>
+  <%= stylesheet_link_tag    "application" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+<center>
+  <h2><span id="title">Enter your user id and password to vote</span></h2>
+</center>
+
+You can vote on whichever issues you care to vote at this time and return later to vote on other issues.
+
+<%= form_tag :action => 'record_votes' do %>
+  <%= hidden_field_tag(:username, @uname) %>
+  <ol>
+		<%= for question in @questions %>
+			<li>
+				<font size=+1><%= question.body %><%= select "question", question.id, [["Your vote?", :no_vote], ["Yes", :yes], ["No", :no], ["Abstain", :abstain]]  %></font><br/>
+				<font size=+1>(Vote due by: <%= question.end %>)</font>
+			</li>
+		<% end %>
+  </ol>
+  <br/>
+  <center>
+	<%= submit_tag 'Place Vote' %>
+	</center>
+<% end %>
+
+</body>
+</html>

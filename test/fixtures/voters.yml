@@ -1,0 +1,20 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  username: MyString
+  password: MyString
+
+two:
+  username: MyString
+  password: MyString
+# == Schema Information
+#
+# Table name: voters
+#
+#  id         :integer         not null, primary key
+#  username   :string(255)
+#  password   :string(255)
+#  created_at :datetime
+#  updated_at :datetime
+#
+

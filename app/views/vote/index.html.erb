@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Voting Registration</title>
+  <%= stylesheet_link_tag    "application" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+<center>
+  <h2>Enter your user id and password to vote</h2>
+</center>
+
+<%= form_tag :action => 'list' do %>
+	<center>
+	<table>
+		<tr><td>Username:</td><td><%= text_field_tag :username %></td></tr>
+		<tr><td>Password:</td><td><%= password_field_tag :pword %></td></tr>
+	</table>
+	<br/>
+	<%= submit_tag 'Login' %>
+	</center>
+<% end %>
+
+</body>
+</html>

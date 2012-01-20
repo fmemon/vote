@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  voter_id: 1
+  question_id: 1
+  is_yes: false
+
+two:
+  voter_id: 1
+  question_id: 1
+  is_yes: false
+# == Schema Information
+#
+# Table name: vote_records
+#
+#  id          :integer         not null, primary key
+#  voter_id    :integer
+#  question_id :integer
+#  is_yes      :boolean
+#  created_at  :datetime
+#  updated_at  :datetime
+#
+

@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  body: MyText
+  start: 2012-01-20 11:48:49
+  end: 2012-01-20 11:48:49
+
+two:
+  body: MyText
+  start: 2012-01-20 11:48:49
+  end: 2012-01-20 11:48:49
+# == Schema Information
+#
+# Table name: questions
+#
+#  id         :integer         not null, primary key
+#  body       :text
+#  start      :datetime
+#  end        :datetime
+#  created_at :datetime
+#  updated_at :datetime
+#
+
